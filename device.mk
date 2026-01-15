@@ -24,7 +24,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.device.rc
+    init.device.rc \
+    init.goodix.sh
 
 # Wifi
 PRODUCT_PACKAGES += \
