@@ -18,7 +18,7 @@ git clone --depth=1 https://github.com/Tiktodz/vendor_asus-4.19 vendor/asus
 
 ### Renaming
 sed -i 's/CONFIG_LOCALVERSION=.*/CONFIG_LOCALVERSION="-TOMTzy-969"/g' kernel/asus/sdm660/arch/arm64/configs/asus/X00TD_defconfig
-sed -i 's/dontaudit location_domain vendor_sysfs_soc_sensitive:file r_file_perms;/dontaudit location_domain sysfs_socinfo_sensitive:file r_file_perms;/g' device/lineage/sepolicy/qcom/vendor/location.te
+#sed -i 's/dontaudit location_domain vendor_sysfs_soc_sensitive:file r_file_perms;/dontaudit location_domain sysfs_socinfo_sensitive:file r_file_perms;/g' device/lineage/sepolicy/qcom/vendor/location.te
 
 #### signing
 rm -rf vendor/lineage-priv/keys
