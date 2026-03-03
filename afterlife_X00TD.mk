@@ -10,10 +10,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common LineageOS stuff
-$(call inherit-product, vendor/custom/config/common_full_phone.mk)
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
+
+# Inherit some AfterlifeOS flags
+AFTERLIFE_BUILD_TYPE := OFFICIAL
+AFTERLIFE_GAPPS := false
+AFTERLIFE_MAINTAINER := BllsszzXD
+TARGET_ENABLE_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_HAS_UDFPS := false
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Inherit some flags
 TARGET_BUILD_DEVICE_AS_WEBCAM := true
@@ -21,7 +30,7 @@ TARGET_BUILD_DEVICE_AS_WEBCAM := true
 TARGET_EXCLUDES_AUDIOFX := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := custom_X00TD
+PRODUCT_NAME := afterlife_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
