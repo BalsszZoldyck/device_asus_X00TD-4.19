@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/custom_X00TD.mk
+    $(LOCAL_DIR)/afterlife_X00TD.mk
