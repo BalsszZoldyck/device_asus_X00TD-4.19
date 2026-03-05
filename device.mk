@@ -7,11 +7,11 @@
 # Inherit from sdm660-common
 $(call inherit-product, device/asus/sdm660-common/sdm660.mk)
 
+$(call inherit-product-if-exists, vendor/lineage-priv/keys/keys.mk)
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
-
--include vendor/afterlife-priv/keys/
 
 # Fingerprint
 PRODUCT_PACKAGES += \
